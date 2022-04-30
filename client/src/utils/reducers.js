@@ -73,6 +73,12 @@ export const reducer = (state, action) => {
         cart: [],
       };
 
+    case TOGGLE_CART:
+      return {
+        ...state,
+        cartOpen: !state.cartOpen,
+      };
+
     default:
       return state;
   }
