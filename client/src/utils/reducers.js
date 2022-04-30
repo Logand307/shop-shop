@@ -66,6 +66,13 @@ export const reducer = (state, action) => {
         }),
       };
 
+    case CLEAR_CART:
+      return {
+        ...state,
+        cartOpen: false,
+        cart: [],
+      };
+
     default:
       return state;
   }
